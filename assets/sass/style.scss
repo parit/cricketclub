@@ -1,9 +1,12 @@
+body {
+    font-family: sans-serif;
+}
+
 nav ul {
     list-style: none;
     background: aliceblue;
     display: flex;
-}
-
-nav ul li {
-    padding: 5px;
+    li {
+        padding: 5px;
+    }
 }
