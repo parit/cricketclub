@@ -1,3 +1,8 @@
+:root {
+    --basecolor: #4a3a27;
+    --headerbackground: #f5deb363;
+}
+
 html,
 body {
     font-family: sans-serif;
@@ -6,6 +11,8 @@ body {
     font-size: 16px;
     line-height: 1.4;
     margin: 0px;
+    background-color: var(--basecolor);
+    color: var(--basecolor);
     video {
         object-fit: cover;
         width: 100vw;
@@ -24,7 +31,7 @@ body {
         header {
             display: flex;
             align-items: center;
-            background-color: #f5deb363;
+            background-color: var(--headerbackground);
             border-radius: 10px;
             padding: 5px 10px;
             .logo {
@@ -62,7 +69,7 @@ section {
 
 nav ul {
     list-style: none;
-    background: #f5deb363;
+    background: var(--headerbackground);
     display: flex;
     margin: 0px;
     li {
@@ -71,6 +78,7 @@ nav ul {
         letter-spacing: 2px;
         a {
             text-decoration: none;
+            color: var(--basecolor)
         }
     }
 }
