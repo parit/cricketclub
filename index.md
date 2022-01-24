@@ -1,5 +1,4 @@
 ---
-layout: default-layout.njk
+layout: home-layout.njk
 title: Home Page 
 ---
-# Home of Cricket 

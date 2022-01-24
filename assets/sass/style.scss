@@ -3,82 +3,89 @@
     --headerbackground: #f5deb363;
 }
 
-html,
+.row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    &:visited {
+        color: unset;
+    }
+}
+
 body {
-    font-family: sans-serif;
-    height: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
     line-height: 1.4;
     margin: 0px;
-    background-color: var(--basecolor);
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px auto;
     color: var(--basecolor);
-    video {
-        object-fit: cover;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
+    header {
+        position: relative;
+        background-color: var(--headerbackground);
+        border-radius: 10px;
+        padding: 5px 10px;
+        .logo-container {
+            align-items: center;
+        }
+        .logo {
+            width: 8vw;
+            min-width: 100px;
+        }
+        h1 {
+            margin: 0px;
+            font-family: 'Syncopate', sans-serif;
+            font-size: calc(25px + 1vw);
+            line-height: 1;
+        }
+        .sub {
+            font-size: calc(10px + 0.8vw);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            ul {
+                display: flex;
+                li {
+                    font-size: 1.4em;
+                    margin: 0 20px;
+                    letter-spacing: 2px;
+                    a {
+                        color: var(--basecolor)
+                    }
+                }
+            }
+        }
     }
     main {
         position: relative;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 0px 10px 0px 10px;
-        header {
-            display: flex;
-            align-items: center;
-            background-color: var(--headerbackground);
-            border-radius: 10px;
-            padding: 5px 10px;
-            .logo {
-                width: 8vw;
-                min-width: 100px;
-            }
-            h1 {
-                margin: 0px;
-                font-family: 'Syncopate', sans-serif;
-                font-size: calc(25px + 1vw);
-                line-height: 1;
-            }
-            .sub {
-                font-size: calc(10px + 0.8vw);
-            }
-        }
+        padding: 0 0 10px 0;
     }
-}
-
-section {
-    margin: 20px 10px;
-}
-
-.iframe-container {
-    overflow: hidden;
-    position: relative;
-    height: 500px;
-    iframe {
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-    }
-}
-
-nav ul {
-    list-style: none;
-    background: var(--headerbackground);
-    display: flex;
-    margin: 0px;
-    li {
-        font-size: 1.4em;
-        margin: 0 20px;
-        letter-spacing: 2px;
-        a {
-            text-decoration: none;
-            color: var(--basecolor)
-        }
+    footer {
+        text-align: center;
+        min-height: 100px;
+        background-color: var(--headerbackground);
     }
 }
