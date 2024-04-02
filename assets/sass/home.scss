@@ -11,21 +11,28 @@ video {
     position: relative;
     height: 100%;
     display: flex;
-    color: white;
+    color: var(--basecolor);
     justify-content: center;
     text-align: center;
     overflow: hidden;
     flex-direction: column;
-    background: rgb(0, 0, 0, 0.5);
     a:hover {
         color: whitesmoke;
     }
-    .fixtureWrapper{
+    .fixtureWrapper, .fixtureWrapper2{
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 20px;
+        iframe {
+            min-height: 600px;
+            min-width: 600px;
+        }
     }
+    .fixtureWrapper2 {
+        justify-content: space-between;
+    }
+
 }
 
 .about {
