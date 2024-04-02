@@ -1,5 +1,6 @@
 :root {
     --basecolor: #4a3a27;
+    --basecolor: #ffffff;
     --headerbackground: #f5deb363;
 }
 
@@ -40,7 +41,7 @@ body {
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 220px auto;
+    grid-template-rows: 185px auto;
     color: var(--basecolor);
     header {
         position: relative;
@@ -66,6 +67,7 @@ body {
         nav {
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
             ul {
                 display: flex;
                 li {

@@ -1,6 +1,6 @@
 video {
     position: absolute;
-    top: -120;
+    top: -185;
     left: 0;
     min-width: 100%;
     min-height: 100%;
@@ -13,12 +13,18 @@ video {
     display: flex;
     color: white;
     justify-content: center;
-    align-items: center;
     text-align: center;
     overflow: hidden;
+    flex-direction: column;
     background: rgb(0, 0, 0, 0.5);
     a:hover {
         color: whitesmoke;
+    }
+    .fixtureWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
     }
 }
 
