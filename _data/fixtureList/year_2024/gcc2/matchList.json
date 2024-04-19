@@ -1,0 +1,15 @@
+{
+    "title" : "Geneva Cricket Club 2nd XI Fixtures/Results",
+    "matches": [
+        {
+            "type" : "t40",
+            "title": "Cricket Switzerland Regional League",
+            "link" : "https://www.crichq.com/plugins/base?width=598&height=600&border=1#competitions/9763/draws/60619/standings_table/pool/1"
+        },
+        {
+            "type" : "t20",
+            "title": "Cricketer Pro Cup – T20 Division II",
+            "link" : "https://www.crichq.com/plugins/base?width=598&height=600&border=1#competitions/7785/draws/60629/standings_table/pool/1"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "title" : "Geneva Cricket Club 1st XI Fixtures/Results",
+    "matches": [
+        {
+            "type" : "t40",
+            "title": "Cricket Switzerland Premier League",
+            "link" : "https://www.crichq.com/plugins/base?width=598&amp;height=600&amp;border=1#competitions/7784/draws/60508/standings_table"
+        },
+        {
+            "type" : "t20",
+            "title": "Cricket Switzerland T20 Championship-Elite Division",
+            "link" : "https://www.crichq.com/plugins/base?width=598&amp;height=600&amp;border=1#competitions/7785/draws/60597/standings_table/pool/1"
+        }
+    ]
+}

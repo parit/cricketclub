@@ -7,38 +7,34 @@ layout: base-layout.njk
     <source src="videos/back2.mp4" type="video/mp4">
 </video>-->
 <section class="home">
-    <h1>2024 Fixtures and Results</h1>
+    <h1>{{ siteSetting.label }}</h1>
     <div class="fixtureWrapper">
         <div class="ggc1">
-            <h1>Geneva Cricket Club 1st XI Fixtures/Results</h1>
-                <iframe border="0" style="border:none;"   scrolling="yes" src="https://www.crichq.com/plugins/base?width=598&#038;height=600&#038;border=1#competitions/7784/draws/60508/standings_table">
-                </iframe>
-                <iframe loading="lazy" border="0" style="border:none;" src="https://www.crichq.com/plugins/base?width=598&amp;height=600&amp;border=1#competitions/7785/draws/60597/standings_table/pool/1"></iframe>
+            <h1>{{ fixtureList.year_2024.gcc1.matchList.title }}</h1>
+            {% for m in fixtureList.year_2024.gcc1.matchList.matches %}
+                <h4>{{ m.title }}</h4>
+                <iframe loading="lazy" border="0" style="border:none;" scrolling="yes" src="{{ m.link }}"></iframe>
+            {% endfor %}
         </div>
         <div class="ggc2">
-            <h1>Geneva Cricket Club 2nd XI Fixtures/Results</h1>
-                <iframe border="0" style="border:none;" scrolling="yes" src="https://www.crichq.com/plugins/base?width=598&height=600&border=1#competitions/9763/draws/60619/standings_table/pool/1">
-                </iframe>
-                <iframe loading="lazy" border="0" style="border:none;" src="https://www.crichq.com/plugins/base?width=598&height=600&border=1#competitions/7785/draws/60629/standings_table/pool/1"></iframe>
+            <h1>{{ fixtureList.year_2024.gcc2.matchList.title }}</h1>
+            {% for m in fixtureList.year_2024.gcc2.matchList.matches %}
+                <h4>{{ m.title }}</h4>
+                <iframe loading="lazy" border="0" style="border:none;" scrolling="yes" src="{{ m.link }}"></iframe>
+            {% endfor %}
         </div>
     </div>
-    <div class="fixtureWrapper2"> 
+    <div class="fixtureWrapper"> 
         <div class="ggcT10">
-            <h1>Geneva Cricket Club T10 Fixtures/Results</h1>
-                <iframe loading="lazy" border="0" style="border:none;" src="https://www.crichq.com/plugins/base?width=598&height=600&border=1#competitions/9762/draws/60792/standings_table/pool/1"></iframe>
+            <h1>{{ fixtureList.year_2024.t10.matchList.title }}</h1>
+            {% for m in fixtureList.year_2024.t10.matchList.matches %}
+                <h4>{{ m.title }}</h4>
+                <iframe loading="lazy" border="0" style="border:none;" scrolling="yes" src="{{ m.link }}"></iframe>
+            {% endfor %}
         </div>
         <div class="ggcu19">
-            <h1>Geneva Cricket Club U19 Fixtures/Results</h1>
+            <h1>{{ fixtureList.year_2024.u19.matchList.title }}</h1>
             <p>Coming soon</p>
         </div>
     </div>
-    <!--<div class="message">
-        
-        <h1>We are under maintainence.</h1>
-        <p>Please connect with us via our <a href="https://www.facebook.com/Geneva1872">Facebook </a> and <a href="https://www.instagram.com/genevacricketclub/">Instagram</a> page.</p>-->
-    </div>
-    
 </section>
-
-<!--<section class="about">
-</section>-->

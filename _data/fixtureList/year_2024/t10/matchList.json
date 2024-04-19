@@ -1,0 +1,10 @@
+{
+    "title" : "Geneva Cricket Club T10 Fixtures/Results",
+    "matches": [
+        {
+            "type" : "t10",
+            "title": "Cricket Switzerland T10 Series",
+            "link" : "https://www.crichq.com/plugins/base?width=598&height=600&border=1#competitions/9762/draws/60792/standings_table/pool/1"
+        }
+    ]
+}
