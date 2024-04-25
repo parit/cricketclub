@@ -1,4 +1,4 @@
 ---
 layout: home-layout.njk
-title: Home Page 
+season: "2024"
 ---

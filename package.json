@@ -12,6 +12,7 @@
         "build:webpack": "webpack --mode production",
         "postbuild": "postcss _site/assets/css/*.css -u autoprefixer cssnano -r --no-map",
         "start": "npm-run-all build:sass --parallel watch:*",
+        "start:debug": "DEBUG=Eleventy* npm-run-all build:sass --parallel watch:*",
         "build": "npm-run-all build:sass build:eleventy build:webpack",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -40,5 +41,8 @@
     },
     "browserslist": [
         "last 2 versions"
-    ]
+    ],
+    "devDependencies": {
+        "common-tags": "^1.8.2"
+    }
 }

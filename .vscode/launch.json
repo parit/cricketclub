@@ -1,0 +1,14 @@
+{
+    "name": "11ty",
+    "type": "node",
+    "request": "launch",
+    "program": "/home/pbansal/bin/npm",
+    "stopOnEntry": false,
+    "args": ["run watch"],
+    "cwd": "${workspaceRoot}",
+    "console": "internalConsole",
+    "configurations": [
+
+    ],
+}
+
