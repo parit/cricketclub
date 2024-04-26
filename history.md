@@ -1,6 +1,7 @@
 ---
 title: A brief historical account of the Geneva cricket club  
 layout: history.njk
+url: 'history'
 ---
 ## The origins of the club in the 19th century
 
