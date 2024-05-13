@@ -43,7 +43,13 @@ module.exports = function() {
                 },
                 "u19" : {
                     "title" : "Geneva Cricket Club U19 Fixtures/Results",
-                    "matches": []
+                    "matches": [
+                        {
+                            "type" : "t40",
+                            "title": "U19 CSPL 2024",
+                            "link" : "https://www.crichq.com/plugins/base?width=598&amp;height=600&amp;border=1#competitions/14940/draws/61051/standings_table"
+                        }
+                    ]
                 } 
             },
             "2023" : {
