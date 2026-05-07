@@ -2,16 +2,18 @@
 layout: base-layout.njk
 ---
 <link rel="stylesheet" href="/assets/css/home.css"/> 
+<script src="https://parit.github.io/swiss-cricket-stats/component/cricket-stats.js"></script> 
 
 <section>
-    <h3>Dear members and lovers of Geneva Cricket Club, 
+     <cricket-stats season="2026" team="Geneva CC"></cricket-stats> 
+    <!--<h3>Dear members and lovers of Geneva Cricket Club, 
         due to technical issues faced by <a href="https://cricketswitzerland.ch/">Cricket Switzerland</a>, 
         we have all lost our previous match records that were hosted at 
         <a href="https://crichq.com/">CricHQ</a>. 
         We have no information if and when it will be recovered. 
         In the meantime, please follow us via our <a href="https://www.facebook.com/Geneva1872">Facebook page</a> for updates. 
     </h3>
-    <!--<h1>{{ siteSetting.label }}</h1>
+    <h1>{{ siteSetting.label }}</h1>
     <div class="">
         {% SeasonSelector season %}
     </div>

@@ -12,7 +12,7 @@ video {
     height: 100%;
     display: flex;
     color: var(--basecolor);
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     flex-direction: column;
     a:hover {
@@ -32,6 +32,10 @@ video {
         justify-content: space-between;
     }
     section {
+        cricket-stats {
+            width: 70%;
+            margin: auto;
+        }
         a {
             color: red;
             text-decoration: underline;
