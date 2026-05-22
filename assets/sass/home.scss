@@ -13,8 +13,11 @@ video {
     display: flex;
     color: var(--basecolor);
     justify-content: flex-start;
-    text-align: center;
+    
     flex-direction: column;
+    h2 {
+        text-align: center;
+    }
     a:hover {
         color: whitesmoke;
     }
